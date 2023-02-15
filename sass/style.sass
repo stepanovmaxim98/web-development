@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
 @import "pages/practice-pages.sass"
 @import "components/lesson__card.sass"
-@import "components/media.sass"
-
+@import "components/typographics.sass"
 
 html 
   box-sizing: border-box
@@ -94,6 +93,70 @@ ol, ul
         transform: translateY(-.5rem)
 
 
+
+
+
+//moodle acardeon
+.acor-container 
+    margin: 20px 0
+.acor-container .acor-body 
+    width: calc(100% - 40px)
+    margin: 0 auto
+    height: 0
+    color: rgba(0, 0, 0, 0)
+    background-color: #c7f7ed
+    line-height: 18px
+    padding: 0 30px
+    box-sizing: border-box
+    transition: color 0.5s, padding 0.5s
+    overflow: hidden 
+    font-size: 16px
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2)
+
+.acor-container .acor-body p 
+    margin: 0 0 10px
+.acor-container label
+    cursor: pointer
+    background-color: #134B48
+    display: block
+    padding: 15px 20px
+    width: 100%
+    color: #fff
+    font-weight: 700
+    box-sizing: border-box
+    z-index: 100  
+    font-size: 18px
+    margin: 0 0 5px
+    transition: color .35s
+.acor-container label:hover 
+    color: #FFF
+
+.acor-container input
+    display: none
+.acor-container label:before 
+    content: '\276F'
+    float: right
+.acor-container input:checked + label 
+    background-color: #134B48
+    color: #FFF
+    box-shadow: 0 8px 26px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3)
+.acor-container input:checked + label:before 
+    transition: transform .35s
+    transform: rotate(90deg)
+.acor-container input:checked + label + .acor-body 
+    height: auto
+    margin-top: -5px
+    color: #000
+    padding: 20px 30px 10px
+
+//player
+#player
+  width: 55rem
+  height: 33rem
+  margin: 0 auto
+  display: block
+
+// media quarieties
 @media (min-width: 1056px) and (max-width: 1200px)
   .container
     width: 90rem
@@ -238,4 +301,9 @@ ol, ul
     margin: 0 auto
     width: 12rem
     text-align: center
+  #player
+    width: 20rem
+    height: 13rem
+
+    
     

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Модуль №1. Основные программы</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css.map">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css" />
 </head>
 <body>
     <header class="header">
@@ -18,9 +20,41 @@
             </div>
 
             <!-- главный заголовок страницы -->
-            <h3 class="title">Модуль №1. Основные программы</h3>
-            <p class="descr"></p>
+            <div class="heading">Модуль №1. Основные программы</div>
+            <p class="descr">В данном модуле мы познакомимся с установкой необходимых программ на начальном этапе работы, а также добавим требуемые плагины для комфортной работы. </p>
+            <div class="accardeon__block">
+                <div class="acor-container"> 
+    
+                    <input type="radio" name="acor" id="acor1" checked="checked" />
+                    <label for="acor1">Урок №1. Текстовые редакторы </label>
+                    <div class="acor-body">
+                        <p>Описание вкладки</p>
+                        <!-- видеоурок -->
+                        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+                            <source src="./video/moodle1/2023-02-15 21-28-09.mkv" type="video/mp4" />
+                            <source src="./video/moodle1/2023-02-15 21-28-09.mkv" type="video/webm" />
+                          
+                            <!-- Captions are optional -->
+                            <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+                          </video>
+                    </div>
+                    
+                    <input type="radio" name="acor" id="acor2" />
+                    <label for="acor2">Урок №2. Установка редактора кода</label>
+                    <div class="acor-body">
+                        <p>Описание вкладки</p>
+                    </div>
+                    
+                    <input type="radio" name="acor" id="acor3" />
+                    <label for="acor3">Урок №3. Настройка редактора кода</label>
+                    <div class="acor-body">
+                        <p>Описание вкладки</p>
+                    </div> 
+                    
+                </div>
+            </div>
         </div>
     </header>
+   
 </body>
 </html>
