@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
 @import "pages/practice-pages.sass"
 @import "components/lesson__card.sass"
+@import "components/media.sass"
+
+
 html 
   box-sizing: border-box
   font-size: 62.5%
@@ -19,13 +22,10 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul
 ol, ul 
   list-style: none
 
-img 
-  max-width: 100%
-  height: auto
-
 .container
-    width: 120rem
-    margin: 0 auto
+
+  width: 120rem
+  margin: 0 auto
 //header styles
 .header
     background: url(../img/bg-img.png) center / cover no-repeat
@@ -94,3 +94,9 @@ img
         transform: translateY(-.5rem)
 
 
+@media (min-width: 1000px) and (max-width: 1200px)
+
+  .container
+    width: 90rem
+  .lesson__card
+    width: 28rem
